@@ -23,6 +23,14 @@ body.light-mode {
 body.dark-mode {
     background-color: #000;
     color: #FFF;
+
+    & .container-valoraciones{
+   
+        & img{
+            background-color: var(--color-white);
+        }
+    }
+
 }
 
 .container-menu {
@@ -280,4 +288,53 @@ body.dark-mode {
     & .valoraciones-texto{
         margin-top: -50px;
     }
+
+}
+
+footer{
+    background-color: rgb(35, 47, 62);
+    height: 10vh;
+    & .footer-logos{
+        display: flex;
+        justify-content: center;
+
+        & a{
+            padding: 1%;
+        }
+
+        & img:hover{
+            box-shadow: 1px 1px 0px #999,
+                2px 2px 0px #999,
+                3px 3px 0px #999,
+                4px 4px 0px #999,
+                5px 5px 0px #999,
+                6px 6px 0px #999;
+        }
+
+
+    }
+
+}
+
+@media screen and (max-width: 1366px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container-main{
+        & div{
+            width: 25vw;
+        }
+    }
+
+    .container-valoraciones{
+        & div{
+            width: 78vw;
+        }
+        & .valoraciones-texto{
+            margin-top: -40px;
+        }
+    }
+    
+    
 }
